@@ -1,0 +1,48 @@
+info:
+  contact: {}
+paths:
+  /v1/user/accountLogin:
+    post:
+      consumes:
+      - application/json
+      description: 通过账号密码登录
+      parameters:
+      - description: 用户账号
+        in: query
+        name: username
+        required: true
+        type: string
+      - description: 用户密码
+        in: query
+        name: password
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      summary: 账号登录
+      tags:
+      - 用户
+  /v1/user/register:
+    post:
+      consumes:
+      - application/json
+      description: 通过账号密码注册
+      parameters:
+      - description: 用户账号
+        in: query
+        name: username
+        required: true
+        type: string
+      - description: 用户密码
+        in: query
+        name: password
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses: {}
+      summary: 账号注册
+      tags:
+      - 用户
+swagger: "2.0"
